@@ -1,0 +1,13 @@
+== Create draft.txt and write the first line ==
+== Append a second line ==
+== Contents of draft.txt ==
+This is the first line of the draft.
+This is the second line of the draft.
+== Copy draft.txt to draft_backup.txt ==
+== Rename draft_backup.txt to final_report.txt ==
+== Contents of final_report.txt ==
+This is the first line of the draft.
+This is the second line of the draft.
+== Create and remove a temporary file ==
+temporary data
+== Done ==
