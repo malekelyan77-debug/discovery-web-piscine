@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+h1 { margin-bottom: 20px; }
+h2 { margin: 30px 0 12px; }
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.swatch {
+  width: 150px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* 1. Named colors */
+.named-red  { background-color: red; }
+.named-teal { background-color: teal; }
+.named-gold { background-color: gold; color: #222; }
+.named-navy { background-color: navy; }
+
+/* 2. 6-digit HEX */
+.hex-1 { background-color: #E53935; }
+.hex-2 { background-color: #1E88E5; }
+.hex-3 { background-color: #43A047; }
+.hex-4 { background-color: #8E24AA; }
+
+/* 3. RGB */
+.rgb-1 { background-color: rgb(229, 57, 53); }
+.rgb-2 { background-color: rgb(30, 136, 229); }
+.rgb-3 { background-color: rgb(67, 160, 71); }
+.rgb-4 { background-color: rgb(142, 36, 170); }
+
+/* 4. RGBA: same color, different alpha */
+.rgba-1 { background-color: rgba(229, 57, 53, 1);    }
+.rgba-2 { background-color: rgba(229, 57, 53, 0.75); }
+.rgba-3 { background-color: rgba(229, 57, 53, 0.5);  }
+.rgba-4 { background-color: rgba(229, 57, 53, 0.25); }
+
+/* Striped backdrop so transparency is visible */
+.on-pattern {
+  padding: 20px;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff 0 15px,
+    #cfd8dc 15px 30px
+  );
+}
+
+.on-pattern .swatch {
+  color: #000;
+}
+
+/* Comparison */
+.compare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex: 1 1 250px;
+  padding: 25px;
+  border-radius: 8px;
+  color: #000;
+}
+
+/* Fades the ENTIRE element, children included */
+.box-opacity {
+  background-color: rgb(229, 57, 53);
+  opacity: 0.5;
+}
+
+/* Fades ONLY the background color */
+.box-rgba {
+  background-color: rgba(229, 57, 53, 0.5);
+}
+
+.explain {
+  margin-top: 25px;
+  max-width: 650px;
+  line-height: 1.5;
+}

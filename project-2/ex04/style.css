@@ -1,0 +1,63 @@
+/* Universal reset: applies border-box to everything, including pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+h1 { margin-bottom: 20px; }
+
+/* Ruler showing the declared width */
+.ruler {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 20px;
+  background: #222;
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 30px;
+  text-align: center;
+}
+
+.comparison {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Same width, padding and border for both boxes */
+.box {
+  width: 300px;
+  padding: 20px;
+  border: 10px solid #1e88e5;
+  background: #bbdefb;
+}
+
+.box h2 { margin-bottom: 10px; }
+
+/* The default behavior, restored on purpose to show the difference */
+.content-box {
+  box-sizing: content-box;
+}
+
+/* Padding and border are absorbed into the 300px */
+.border-box {
+  box-sizing: border-box;
+  border-color: #43a047;
+  background: #c8e6c9;
+}
+
+.explain {
+  margin-top: 25px;
+  max-width: 650px;
+  line-height: 1.5;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Spectrum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Color Swatch Palette</h1>
+
+  <!-- Named colors -->
+  <h2>Named colors</h2>
+  <div class="swatches">
+    <div class="swatch named-red">red</div>
+    <div class="swatch named-teal">teal</div>
+    <div class="swatch named-gold">gold</div>
+    <div class="swatch named-navy">navy</div>
+  </div>
+
+  <!-- HEX -->
+  <h2>6-digit HEX</h2>
+  <div class="swatches">
+    <div class="swatch hex-1">#E53935</div>
+    <div class="swatch hex-2">#1E88E5</div>
+    <div class="swatch hex-3">#43A047</div>
+    <div class="swatch hex-4">#8E24AA</div>
+  </div>
+
+  <!-- RGB -->
+  <h2>RGB</h2>
+  <div class="swatches">
+    <div class="swatch rgb-1">rgb(229, 57, 53)</div>
+    <div class="swatch rgb-2">rgb(30, 136, 229)</div>
+    <div class="swatch rgb-3">rgb(67, 160, 71)</div>
+    <div class="swatch rgb-4">rgb(142, 36, 170)</div>
+  </div>
+
+  <!-- RGBA -->
+  <h2>RGBA (alpha transparency)</h2>
+  <div class="swatches on-pattern">
+    <div class="swatch rgba-1">alpha 1.0</div>
+    <div class="swatch rgba-2">alpha 0.75</div>
+    <div class="swatch rgba-3">alpha 0.5</div>
+    <div class="swatch rgba-4">alpha 0.25</div>
+  </div>
+
+  <!-- Comparison -->
+  <h2>opacity vs. rgba</h2>
+  <div class="compare on-pattern">
+    <div class="box box-opacity">
+      <h3>opacity: 0.5</h3>
+      <p>The text fades too.</p>
+    </div>
+    <div class="box box-rgba">
+      <h3>rgba(..., 0.5)</h3>
+      <p>The text stays solid.</p>
+    </div>
+  </div>
+
+  <p class="explain">
+    <code>opacity</code> applies to the whole element: background, text, borders and every child.
+    <code>rgba()</code> applies alpha only to the one color it is used for, so the text keeps full strength.
+  </p>
+</body>
+</html>
